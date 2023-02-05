@@ -1,0 +1,43 @@
+<!-- profiles.html -->
+<link rel="stylesheet" type="text/css" href="app.css">
+
+  <table id="profiles">
+    <tr>
+      <th>Picture</th>
+      <th>Bio</th>
+      <th>Two Truths and a Lie</th>
+    </tr>
+  </table>
+
+  
+  <script>
+
+
+let mockData = [];
+
+fetch('user-data.json')
+  .then(response => response.json())
+  .then(data => {
+    mockData = data;
+
+    const table = document.getElementById('profiles');
+
+    for (let i = 0; i < mockData.length; i++) {
+      const profile = mockData[i];
+      const row = table.insertRow();
+
+      const pictureCell = row.insertCell();
+      const picture = document.createElement('img');
+      picture.src = profile.picture;
+      picture.width = 50;
+      picture.height = 50;
+      pictureCell.appendChild( picture );
+
+      const bioCell = row.insertCell();
+      bioCell.innerHTML = profile.bio;
+
+      const truthsAndLiesCell = row.insertCell();
+      truthsAndLiesCell.innerHTML = profile.truthsAndLies;
+    }
+  });
+  </script>

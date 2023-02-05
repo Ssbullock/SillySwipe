@@ -1,0 +1,4 @@
+[  {    "picture": "https://example.com/user1.jpg",    "bio": "Hi, I'm user 1! I love hiking and trying new foods.",    "truthsAndLies": "I have a pet cat, I've climbed Mount Everest, I've never been skydiving"  }, 
+ {    "picture": "https://example.com/user2.jpg",    "bio": "Hi, I'm user 2! I'm a big fan of music and photography.",    "truthsAndLies": "I can play the guitar, I've visited every continent, I'm a black belt in karate"  },  
+ {    " picture": "https://example.com/user3.jpg",    "bio": "Hi, I'm user 3! I love to travel and explore new cultures.",    "truthsAndLies": "I've lived in 5 countries, I've bungee jumped, I can speak 5 languages fluently"  }]
+
